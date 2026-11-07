@@ -2,6 +2,19 @@
 
 Family-aware structural compression for JSON. **13-15% of raw JSON** with O(1) per-field random access.
 
+## Aurekai / Bonfÿre: role and maturity
+
+**Why this exists:** AI accelerates implementation, but dependable reuse requires source context, tested components and evidence. [Aurekai](https://aurekai.work) invests engineering, AI and reusable software into digital products; [Bonfÿre](https://github.com/Nickgonzales76017/bonfyre) provides the shared technical engine.
+
+| | This repository |
+|---|---|
+| **Business outcome** | Shared structural storage rather than repeated ad hoc serialization |
+| **Technical scope** | C11 family-aware record compression and field access |
+| **Maturity boundary** | Standalone library; run make test; published ratios only apply to stated samples |
+| **Verification** | Use the actual source, fixtures and test instructions below; a local example is not a deployed customer system. |
+
+[Business, project and technical model](https://github.com/Nickgonzales76017/bonfyre/blob/main/docs/aurekai-bonfyre-model.md)
+
 ## What it does
 
 Given a "family" of structurally similar JSON records (same keys, different values), liblambda-tensors compresses them dramatically by exploiting shared structure:
